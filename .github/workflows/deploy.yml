@@ -19,7 +19,12 @@ jobs:
           cache: npm
 
       - run: npm ci
-      - run: npx quartz build -d . -o public
+
+      - name: Restore Quartz plugins
+        run: npx quartz plugin install -- --clean
+
+      - name: Build Quartz
+        run: npx quartz build -d . -o public
 
       - name: Deploy to Cloudflare
         uses: cloudflare/wrangler-action@v3
