@@ -196,7 +196,7 @@ plugins:
     options:
       links:
         GitHub: https://github.com/KhanhNguyen2712
-        MLIoT Lab: https://hcmut.edu.vn
+        MLIoT Lab: https://mliotlab.com/
   - source: github:quartz-community/recent-notes
     enabled: false
   - source: github:quartz-community/spacer
